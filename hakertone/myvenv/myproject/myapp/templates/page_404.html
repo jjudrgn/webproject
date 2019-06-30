@@ -1,0 +1,37 @@
+{% load staticfiles %}
+<!--
+layout: default
+title: 404
+description: Not Found
+permalink: /404.html
+
+-->
+
+
+
+<div style="text-align:center;">
+    <span style=" font: italic bold 5em/1.5em Georgia, serif ; color: gray;">404</span>
+    <br>
+    <span style=" font: italic bold 3em/1em Georgia, serif ; color: gray;"> </span>
+    
+    <span style=" font: normal bold 2em/1em sans-serif, serif ; color: black;">PAGE NOT FOUND</span>
+    <br>
+    <span style=" font: normal bold 1em/1em Georgia, serif ; color: black;"> </span>
+    
+    <span style=" font: normal lighter 1em/1em cursive, serif ;">Oops! It looks like you're lost..</span>
+    <br>
+    <span style=" font: normal bold 1em/1em Georgia, serif ;">  </span>
+    
+    <img src="{% static '404.jpg'%}" alt="404 not found image"/>    <!-- 이거 왜안되지..? 정적파일가져오기-->
+    <br>
+    <img src="https://http.cat/404" alt="404 cat"  align="center" border="0">
+    <br>
+    
+    <script>
+        function goBack() {
+        window.history.back();
+        }
+    </script>
+    <button onclick="goBack()">돌아가기</button>
+    <!-- 돌아가기 눌러도 같은 404페이지이면 홈으로 돌아가는것 구현하기-->
+</div>
